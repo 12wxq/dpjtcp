@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:id="@+id/r1"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/grey"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <AdapterViewFlipper
+        android:background="@drawable/w12"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipper"
+        android:flipInterval="5000"
+        android:layout_alignParentTop="true"
+
+
+        />
+
+    <Button
+        android:id="@+id/before"
+         android:clickable="true"
+        android:background="@drawable/btn_set"
+        android:text="上一张"
+        android:onClick="prev"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/tz"
+        android:clickable="true"
+        android:background="@drawable/btn_set"
+        android:text="更多"
+
+        android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:clickable="true"
+        android:background="@drawable/btn_set"
+        android:id="@+id/next"
+        android:text="下一张"
+        android:onClick="next"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
